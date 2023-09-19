@@ -13,12 +13,12 @@ function App() {
   };
   return (
     <div className="App">
-      <h3>Join A Chat</h3>
+      {/* <h3>Join A Chat</h3>
       <input
         type="text"
         placeholder="John...."
         onChange={(e) => setUserName(e.target.value)}
-      />
+      /> */}
       <input
         type="text"
         placeholder="Room Id"
