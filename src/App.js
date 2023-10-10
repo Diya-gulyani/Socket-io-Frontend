@@ -12,23 +12,23 @@ function App() {
     if (username !== "" && room !== "") socket.emit("join_room", room);
   };
   return (
-    // <div className="App">
-    //   <h3>Join A Chat</h3>
-    //   <input
-    //     type="text"
-    //     placeholder="John...."
-    //     onChange={(e) => setUserName(e.target.value)}
-    //   />
-    //   <input
-    //     type="text"
-    //     placeholder="Room Id"
-    //     onChange={(e) => setRoom(e.target.value)}
-    //   />
+    <div className="App">
+      <h3>Join A Chat</h3>
+      <input
+        type="text"
+        placeholder="John...."
+        onChange={(e) => setUserName(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="Room Id"
+        onChange={(e) => setRoom(e.target.value)}
+      />
 
-    //   <button onClick={joinRoom}>Submit</button>
+      <button onClick={joinRoom}>Submit</button>
 
-    //   <Chats Socket={socket} username={username} room={room} />
-    // </div>
+      <Chats Socket={socket} username={username} room={room} />
+    </div>
   );
 }
 
